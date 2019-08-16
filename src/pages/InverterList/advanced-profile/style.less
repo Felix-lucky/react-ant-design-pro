@@ -1,0 +1,156 @@
+@import '~antd/lib/style/themes/default.less';
+
+.headerList {
+  margin-bottom: 4px;
+}
+
+.tabsCard {
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+    }
+  }
+}
+
+.noData {
+  color: @disabled-color;
+  text-align: center;
+  line-height: 64px;
+  font-size: 16px;
+  i {
+    font-size: 24px;
+    margin-right: 16px;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.heading {
+  color: @heading-color;
+  font-size: 20px;
+  height: 30px;
+}
+
+.stepDescription {
+  font-size: 14px;
+  position: relative;
+  left: 38px;
+  padding-top: 8px;
+  text-align: left;
+
+  > div {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+.textSecondary {
+  color: @text-color-secondary;
+}
+
+.salesExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    margin-left: 24px;
+    color: @text-color;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+}
+
+.salesCard {
+  .salesRank {
+    padding: 0 32px 32px 72px;
+  }
+  :global {
+    .ant-tabs-bar {
+      padding-left: 16px;
+      .ant-tabs-nav .ant-tabs-tab {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        line-height: 24px;
+      }
+    }
+    .ant-tabs-extra-content {
+      padding-right: 24px;
+      line-height: 55px;
+    }
+    .ant-card-head {
+      position: relative;
+    }
+    .ant-card-head-title {
+      align-items: normal;
+    }
+  }
+}
+.powerItem{
+  padding-right: 20px;
+}
+
+.specification{
+  background-color: #f0f2f5;
+}
+.specificationItem{
+  margin-bottom: 20px;
+  .specificationCol{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .heading {
+    color: @heading-color;
+    font-size: 14px;
+    height: 22px;
+  }
+  .textSecondary {
+    color:  @text-color-secondary;
+  }
+  .more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .moreIconFalse{
+    transform: rotate(90deg);
+  }
+  .moreIconTrue{
+    transform: rotate(-90deg);
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .salesExtra {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: @screen-md) {
+
+  .salesCard .salesBar {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+
+  .salesExtraWrap {
+    display: none;
+  }
+  .stepDescription {
+    left: 8px;
+  }
+
+  .salesCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
