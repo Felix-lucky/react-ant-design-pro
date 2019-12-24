@@ -1,5 +1,6 @@
 // ref: https://umijs.org/config/
 import { primaryColor } from '../src/defaultSettings';
+
 export default {
   plugins: [
     [
@@ -34,7 +35,7 @@ export default {
    * 路由相关配置
    */
   routes: [
-    //user
+    // user
     {
       path: '/user',
       component: '../layouts/UserLayout',
@@ -60,7 +61,7 @@ export default {
         },
       ],
     },
-    //app
+    // app
     {
       path: '/',
       component: '../layouts/BasicLayout',
@@ -184,7 +185,7 @@ export default {
             },
           ],
         },
-        //bulletin
+        // bulletin
         // {
         //   path:'/bulletin',
         //   icon: 'sound',
@@ -202,7 +203,7 @@ export default {
         //     },
         //   ]
         // },
-        //account
+        // account
         {
           name: 'account',
           icon: 'user',
@@ -241,7 +242,7 @@ export default {
             },
           ],
         },
-        //exception
+        // exception
         {
           name: 'exception',
           icon: 'warning',
@@ -274,7 +275,7 @@ export default {
   ],
   proxy: {
     '/server/api/': {
-      target: 'http://192.168.100.99/',
+      target: 'http://www.senergytec.cn/',
       changeOrigin: true,
       pathRewrite: { '^/server': '' },
     },
@@ -290,7 +291,7 @@ export default {
   externals: { '@antv/data-set': 'DataSet' },
   ignoreMomentLocale: true,
   lessLoaderOptions: { javascriptEnabled: true },
-  history: 'hash', // 采用hash路由：#/xxx的形式
-  base:'./',
-  publicPath:'./',
+  // history: 'hash', // 采用hash路由：#/xxx的形式
+  // base:'./',
+  // publicPath:'./',
 };
